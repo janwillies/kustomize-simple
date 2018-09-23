@@ -106,7 +106,7 @@ diff <(kustomize build overlays/dev) \
      <(kustomize build overlays/prod)
 ```
 
-show diff between local and remote environment
+show diff between local and remote environment with [kubediff](https://github.com/weaveworks/kubediff)
 ```sh
 kustomize build overlays/prod | sed '/creationTimestamp/d' > prod.yaml
 kubediff --namespace=prod prod.yaml
