@@ -1,0 +1,4 @@
+resources:
+- acndemo.yaml
+commonLabels:
+  owner: acn

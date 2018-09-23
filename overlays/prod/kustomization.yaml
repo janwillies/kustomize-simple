@@ -1,0 +1,10 @@
+bases:
+- ../../base
+resources:
+- namespace.yaml
+- loadbalancer.yaml
+namespace: prod
+commonLabels:
+  stage: prod
+patches:
+- env-green.yaml
